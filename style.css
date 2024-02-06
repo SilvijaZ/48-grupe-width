@@ -17,13 +17,23 @@ body{
     font-size: 20px;
 }
 
-@media (width: 1100px) {
+
+
+@media screen and (width: 1100px) {
     .red{
         width: 800px;
         margin-left: calc(50% - 400px);
         background-color: rgb(254, 126, 5);
     }
 }
+
+/*@media screen and (max-width: 1100px) {
+    .red{
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        background-color: rgb(254, 126, 5);
+    }
+}*/
 
 @media (max-width: 900px) {
     .red{
