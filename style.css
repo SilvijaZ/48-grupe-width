@@ -121,3 +121,97 @@ body{
 .btn.btn-stadium {
     border-radius: 1.5em;
 }
+
+
+.toggle-switch{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #1560bd, #e600ee);
+    border-radius: 40px;
+    height: 60px;
+    width: 120px;
+    transition: 1s;
+    transform: translate(50%, 50%);
+    animation-direction: alternate;
+}
+
+.toggle-switch::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    animation-direction: alternate;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation-name: switch;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+  }
+
+  .toggle-switch:hover::before{
+    animation-play-state: paused;
+}
+
+  @keyframes switch {
+    0%{
+        margin-left: 1em;
+        background-color: #c602fd;
+    }
+    100%{
+        margin-left: 4em;
+        background-color: #5910f5;
+    }
+}
+
+.circle{
+    margin-left: 30%;
+    background-color: black;
+    width: 80px;
+    height: 150px;
+    font-size: 18px;
+    border: 0.25em solid white;
+    border-radius: 1em;
+    transition: all 1s;
+}
+
+.circle::before{
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: calc(50% - 20px);
+    margin-top: 0.6em;
+    border-radius: 20%;
+    animation-name: scroll;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+.circle::after{
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: calc(50% - 20px);
+    margin-top: 0.3em;
+    border-radius: 20%;
+    animation-name: scroll;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+.circle:hover::before{
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%{
+        margin-top: 0.6em;
+    }
+    100%{
+        margin-top: 1.5em;
+    }
+}
