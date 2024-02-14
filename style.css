@@ -10,6 +10,9 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+/*RESPONSIVE*/
+
 .red{
     width: 1000px;
     margin-left: calc(50% - 500px);
@@ -60,6 +63,8 @@ body{
     }
 }
 
+
+/*BUTTONS*/
 
 .row.btn-list {
     gap: 1rem;
@@ -122,6 +127,8 @@ body{
     border-radius: 1.5em;
 }
 
+
+/*ANIMATION*/
 
 .toggle-switch{
     display: flex;
@@ -215,3 +222,70 @@ body{
         margin-top: 1.5em;
     }
 }
+
+
+/*POSITION*/
+
+/*.main-element {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.sibling-element {
+    padding: 10px;
+    background-color: #f2f2f2;
+}*/
+
+.parent-element {
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    background-color: #81adc8;
+}
+
+.main-element {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.sibling-element {
+	background: #f2f2f2;
+	padding: 10px;
+    border: 1px solid #81adc8;
+} 
+
+html {
+    height: 800px;
+}
+
+/*
+position: static;
+left: 10px;
+bottom: 10px;
+
+kairiosios ir apatinės savybės neturi 
+įtakos elementui su position: static.
+
+position: relative;
+left: 10px;
+bottom: 10px;
+
+kairiosios ir apatinės savybės dabar 
+turi įtakos elemento vietai. 
+
+position: fixed;
+jis lieka toje pacioje vietoje kai slenki i apacia jis juda kartu kiek html plocio.
+
+position: absolute;
+
+position: sticky
+Jis veikia kaip santykinai išdėstytas elementas iki tam tikro
+ slinkties taško ir tada veikia kaip fiksuotas elementas. 
+
+*/
